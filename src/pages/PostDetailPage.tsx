@@ -48,7 +48,7 @@ function PostDetailPage() {
       <p className="text-lg text-gray-700 whitespace-pre-line">
         {post.content}
       </p>
-      {user?._id === post.author._id && (
+      {typeof post.author !== "string" && user?._id === post.author._id && (
         <div className="flex gap-4 mt-4">
           <button
             onClick={() => navigate(`/posts/edit/${id}`)}

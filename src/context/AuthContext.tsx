@@ -9,7 +9,7 @@ import api from "../services/api";
 
 // 👤 User type
 interface User {
-  id: string;
+  _id: string;
   username: string;
   email: string;
 }
